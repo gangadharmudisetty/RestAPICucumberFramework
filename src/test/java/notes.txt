@@ -1,0 +1,9 @@
+#line#7 :addplaceAPI: make sure that you copy this value from APIResourcesEnumClasss otherwise script will fail
+
+##If you want to pass any data to your addPlacePayload() then you have to use above Examples format.Also we have to change "Scenario" to "Scenario Outline so that error won't display for Examples"
+#Alos if you want to send these details to  addPlacePayload() then you have change the "Given Add place payload" to "Given Add place payload <"name"> <"language"> <"address">"
+#If you want to run this for multi datasets use as above so that TC will run two test case
+#How to tell script to execute only specific scenarios in this list below, so we have use like @Addplace, @DeletePlace and later we have to go to TestRunner.java and then write tags= {"@AddPlace"} for the TC you want to execute
+
+
+#https://github.com/damianszczepanik/maven-cucumber-reporting: Polular reporting tool in java
